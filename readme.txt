@@ -24,6 +24,7 @@ I made some extra efforts to enhance accessibility. I'm not an a11y expert but t
 Works with or without JavaScript.  
 If JavaScript is enabled, thumbnails are set via ajax, no need to update the terms.  
 By default, the UI is displayed for all public taxonomies, but this can be filtered that way:
+
 	add_filter( 'sftth_taxonomies', 'my_taxonomies_with_thumbnail' );
 
 	function my_taxonomies_with_thumbnail( $taxonomies ) {
@@ -38,12 +39,29 @@ Find them in `inc/template-tags.php`.
 All of them use `term_taxonomy_id`, not `term_id`. This way we don't need to specify the taxonomy.  
 I tried to mimic the post thumbnail functions:
 
-1. `get_term_thumbnail_id( $term_taxonomy_id )`: Retrieve term thumbnail ID.
-1. `has_term_thumbnail( $term_taxonomy_id )`: Check if term has a thumbnail attached.
-1. `the_term_thumbnail( $term_taxonomy_id, $size = 'post-thumbnail', $attr = '' )`: Display the term thumbnail.
-1. `get_term_thumbnail( $term_taxonomy_id, $size = 'post-thumbnail', $attr = '' )`: Retrieve the term thumbnail.
-1. `set_term_thumbnail( $term_taxonomy_id, $thumbnail_id )`: Set a term thumbnail.
-1. `delete_term_thumbnail( $term_taxonomy_id )`: Remove a term thumbnail.
+Retrieve term thumbnail ID:
+
+	get_term_thumbnail_id( $term_taxonomy_id )
+
+Check if term has a thumbnail attached:
+
+	has_term_thumbnail( $term_taxonomy_id )
+
+Display the term thumbnail:
+
+	the_term_thumbnail( $term_taxonomy_id, $size = 'post-thumbnail', $attr = '' )
+
+Retrieve the term thumbnail:
+
+	get_term_thumbnail( $term_taxonomy_id, $size = 'post-thumbnail', $attr = '' )
+
+Set a term thumbnail:
+
+	set_term_thumbnail( $term_taxonomy_id, $thumbnail_id )
+
+Remove a term thumbnail:
+
+	delete_term_thumbnail( $term_taxonomy_id )
 
 = Store the data =
 
@@ -57,11 +75,13 @@ Side note: there is no upgrade system to switch from one to the other.
 = Get terms =
 
 Use `get_terms()` with a specific parameter to retrieve only terms with a thumbnail:
+
 	$terms = get_terms( array(
 		'with_thumbnail' => true,
 	) );
 
 If you use the plugin *Meta for Taxonomies*, you should always cache thumbnails:
+
 	$terms = get_terms( array(
 		'with_thumbnail' => false,
 	) );
