@@ -1,0 +1,56 @@
+# LANGUAGE French translation for SF Taxonomy Thumbnail plugin for WordPress.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: sf-taxonomy-thumbnail 1.0\n"
+"Report-msgid -Bugs-To: Grégory Viguier <i18n@screenfeed.fr>\n"
+"POT-Creation-Date: 2015-06-08 04:40+0100\n"
+"PO-Revision-Date: 2015-06-14 02:22+0100\n"
+"Last-Translator: Grégory Viguier <i18n@screenfeed.fr>\n"
+"Language-Team: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"Language: fr_FR\n"
+"X-Generator: Poedit 1.8.1\n"
+
+#: sf-taxonomy-thumbnail.php
+msgid  "Add a thumbnail to your taxonomy terms."
+msgstr "Ajoutez une miniature à vos termes de taxonomie."
+
+#: inc/admin.php
+msgid  "Indicate an image ID"
+msgstr "Indiquer l&rsquo;ID d&rsquo;une image"
+
+msgid  "Set a thumbnail"
+msgstr "Définir une miniature"
+
+msgid  "Change thumbnail"
+msgstr "Changer la miniature"
+
+msgid  "Remove thumbnail"
+msgstr "Supprimer la miniature"
+
+msgid  "Choose Thumbnail"
+msgstr "Choisir une miniature"
+
+msgid  "Select thumbnail"
+msgstr "Sélectionner la miniature"
+
+msgid  "Loading&hellip;"
+msgstr "Chargement&#8230;"
+
+msgid  "Thumbnail successfully set to this term."
+msgstr "Miniature assignée à ce terme avec succès."
+
+msgid  "Thumbnail successfully removed from this term."
+msgstr "Miniature supprimée de ce terme avec succès."
+
+msgid  "An error occurred, the thumbnail could not be set to this term. Try to update the term manually."
+msgstr "Une erreur s&rsquo;est produite, la miniature n'a pas pu être assignée à ce terme. Tentez de mettre à jour le terme manuellement."
+
+msgid  "An error occurred, the thumbnail could not be removed from this term. Try to update the term manually."
+msgstr "Une erreur s&rsquo;est produite, la miniature n'a pas pu être supprimée de ce terme. Tentez de mettre à jour le terme manuellement."
