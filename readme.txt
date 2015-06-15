@@ -36,8 +36,7 @@ By default, the UI is displayed for all public taxonomies, but this can be filte
 = Template tags =
 
 Find them in `inc/template-tags.php`.  
-All of them use `term_taxonomy_id`, not `term_id`. This way we don't need to specify the taxonomy.  
-I tried to mimic the post thumbnail functions:
+All of them use `term_taxonomy_id`, not `term_id`. This way we don't need to specify the taxonomy. I tried to mimic the post thumbnail functions.
 
 Retrieve term thumbnail ID:
 
@@ -94,6 +93,7 @@ Summary:
 = Uninstall =
 
 When uninstalling the plugin, you can decide to not delete the thumbnails, simply define a constant in `wp-config.php`:
+
 	define( 'SFTTH_KEEP_DATA', true );
 
 
